@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+        <style>
+
+            body{
+                background-color: black;
+                color: white;
+                font-family:serif;
+            }
+
+            #invitation {
+                display: block;
+                position: relative;
+                border:5px ridge white;
+                font-variant: small-caps;
+                text-align: center;
+                font-family: serif;
+                margin: auto;
+                max-width: 700px;
+            }
+
+            #invitation::after {
+                content: "";
+                background: url("https://upload.wikimedia.org/wikipedia/commons/3/3b/Colored-Pencils.jpg");
+                background-size:100%;
+                background-repeat: no-repeat;
+                opacity: 0.4;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                z-index: -1;
+                background-color:white;
+            }
+
+            #invite-title{
+                font-variant: normal;
+                font-family: 'Allura', serif;
+                font-size: 65px;
+            }
+
+            .list-start{
+                font-weight:bold;
+                font-variant:small-caps;
+                text-decoration:underline;
+            }
+
+            #details{
+                margin:auto;
+                max-width:700px;
+            }
+
+        </style>
+    </head>
+    <body>
+    <div id="invitation">
+        <h2>Star City School District</h2>
+        <h3>cordially invites you to their annual</h3>
+        <h1 id="invite-title">Auction & Dinner</h1>
+        <h3>All Proceeds will go towards the teachers for classroom materials</h3>
+        <br>
+        <p>Black Tie Attire<br>
+        Starling Ballroom<br>
+        July 15th 2028</p>
+    </div>
+
+    <div id="details">
+    <p>More Info</p>
+    <ul>
+        <li><span class="list-start">Auction:</span> We will be auctioning off items that have been donated by the parents of the school and we will be giving the funds to our classroom teachers so they can directly purchase items they need for their classrooms.</li>
+        <li><span class="list-start">Dinner:</span> The catered dinner is from the five-star restaurant "Mexigawa" specializing in deconstructed Mexcian-Japanese fusion cuisine.</li>
+        <li><span class="list-start">Special Guests:</span> Some of our special guests include Forensic Scientist Barry Allen of the SCPD, Captain Sara Lance of the Legends, Kate Kane of Wayne Enterprises, and Mayor Oliver Queen of Starling City.</li>
+    </ul>
+    <br>
+
+    <form>
+      <fieldset>
+        <legend>RSVP NOW!!</legend>
+        <input type="text" name="First Name" placeholder="First Name">
+        <input type="text" name="Last Name" placeholder="Last Name">
+        <select name="answer">
+          <option value="yes" selected>I'll be there! :)</option>
+          <option value="no">Can't make it. :(</option>
+        </select>
+        <input type="submit" value="Submit" onclick="alert('Thank you! Your response has been recorded.')">
+      </fieldset>
+  </form>
+    </div>
+
+    </body>
+</html>

@@ -7,13 +7,35 @@
         <style>
 
             body{
-                max-width: 800px;
-                padding: 10px;
-                margin: auto;
-                background-color:white;
                 font-family:Georgia, times, serif;
+                background-color: rgb(200,200,200);
             }
 
+            header{
+              width: 100%;
+              padding-left: 10px;
+              padding-top: 2px;
+              padding-bottom: 2px;
+              background-color: rgb(100,100,100);
+              color:white;
+              z-index: 2;
+              position: fixed;
+            }
+
+            #aside{
+              color: black;
+              right: 10px;
+              width: 15%;
+              height: 100%;
+              padding-top: 80px;
+              margin-left: 10px;
+              position: fixed;
+              overflow: auto;
+            }
+
+            #aside p{
+              text-indent: 0px;
+            }
 
             hr{
                 width:75%;
@@ -37,19 +59,25 @@
             }
 
             .topsection{
-                background-color:pink;
+                background-color: rgb(200,200,200);
+                position: ;
             }
 
             p{
                 text-indent:30px;
             }
 
-            .whole{
-                background-color:ivory;
-                padding:15px;
+            div.whole{
+                max-width: 60%;
+                padding: 10px;
+                margin-left:auto;
+                margin-right: auto;
+                padding-top: 80px;
+                background-color: rgb(150,150,150);
+                z-index: 1;
             }
 
-            .element{
+            img.element{
               float:left;
               width:300px;
               margin-right: 10px;
@@ -66,22 +94,68 @@
 
 
     <body>
-    <div class="whole">
-    <div class="topsection">
-        <h1>Shazena's Coding Journey</h1>
+      <header>
+          <h1>Shazena's Coding Journey</h1>
+      </header>
 
-        <h3 id="top">Table of Contents</h3>
-        <ol>
-            <li><a href="#1st">My "Formal" Coding History Feb 18 2020</a></li>
-            <li><a href="#2nd">Coding Disguised Feb 18 2020</a></li>
-            <li><a href="#3rd">Back to Computer-Based Coding Feb 19 2020</a></li>
-            <li><a href="#4th">CSS Grouping Classes and Elements, and Descendants</a></li>
-            <!--<li><a href="#5th">Fifth post</a></li>-->
-            <!--**<li><a href="#nth">Template Post</a></li>**-->
-        </ol>
+      <nav>
+
+<!--
+
+<p>Table of Contents:
+          <form action="/action_page.php">
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+            <input type="submit">
+          </form>
+-->
+
+      </nav>
+
+    <div id="aside">
+      <h3>Other Projects and Pages</h3>
+
+      <p>Each project has comments explaining what was expected of me, what problems I had working on the project, and how I solved each of my problems.<p>
+
+      <h4>Other HTML Projects</h4>
+      <ul>
+        <li><a href = "favoriterecipes.html">Recipe Book</a></li>
+        <li><a href = "travelwebpage.html">Travel Webpage</a></li>
+        <li><a href = "invite.html">Invitation</a></li>
+      </ul>
+
+      <h4>ProcessingJS Projects</h4>
+      <ul>
+        <li><a target = "_blank" href = "https://www.khanacademy.org/computer-programming/spin-off-of-project-shooting-star/5920979493093376">Shooting Stars</a></li>
+        <li><a target = "_blank" href = "https://www.khanacademy.org/computer-programming/spin-off-of-project-animal-attack/4664562892947456">Duck Attack</a></li>
+        <li><a target = "_blank" href = "https://www.khanacademy.org/computer-programming/spin-off-of-project-fish-tank/6196586963288064">Fish Tank</a></li>
+        <li><a target = "_blank" href = "https://www.khanacademy.org/computer-programming/spin-off-of-project-magic-8-ball/5472560720658432">Magic 8-Ball</a></li>
+        <li><a target = "_blank" href = "https://www.khanacademy.org/computer-programming/spin-off-of-project-build-a-house/4845468280700928">Brick House</a></li>
+        <li><a target = "_blank" href = "https://www.khanacademy.org/computer-programming/spin-off-of-project-make-it-rain/5960193198538752">It's Raining Stars</a></li>
+        <li><a target = "_blank" href = "https://www.khanacademy.org/computer-programming/spin-off-of-project-bookshelf/5546637349109760">Movie Shelf</a></li>
+      </ul>
 
     </div>
-        <hr class="tophr">
+
+    <div class="whole">
+      <div class="topsection">
+          <h3 id="top">Table of Contents</h3>
+          <ol>
+              <li><a href="#1st">My "Formal" Coding History Feb 18 2020</a></li>
+              <li><a href="#2nd">Coding Disguised Feb 18 2020</a></li>
+              <li><a href="#3rd">Back to Computer-Based Coding Feb 19 2020</a></li>
+              <li><a href="#4th">CSS Grouping Classes and Elements, and Descendants</a></li>
+              <!--<li><a href="#5th">Fifth post</a></li>-->
+              <!--**<li><a href="#nth">Template Post</a></li>**-->
+          </ol>
+
+      </div>
+          <hr class="tophr">
 
 
 <!--------------------------------------------------------------->
