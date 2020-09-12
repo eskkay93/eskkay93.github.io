@@ -231,10 +231,10 @@ function editDvd(id) {
 }
 
 function deleteDvd(id) {
-    alert('This is the id DELETE of that dvd ' + id);
+//     alert('This is the id DELETE of that dvd ' + id);
     $('#deleteModal').modal('show');
     $('#deleteModal').find('#delete-dvd-id').val(id);
-    alert('id has been set?');
+//     alert('id has been set?');
     //bring up the modal
     //put the hidden id in the modal
     //////then the okay button in the modal will run the delete.
@@ -344,7 +344,8 @@ $(document).ready(function () {
         if (validation != "") {
             $('#errors-edit-dvds-form').html(validation);
             return false;
-        } else {
+        }
+//         else {
 
             $.ajax({
                 method: 'PUT',
