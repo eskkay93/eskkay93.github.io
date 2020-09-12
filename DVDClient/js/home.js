@@ -364,11 +364,11 @@ $(document).ready(function () {
                 'dataType': 'json',
                 success: function () {
                     // alert('This is the id number of that dvd ' + id);
-                    // $('#errors-edit-dvds-form').empty();
-                    // clearEditDvdForm();
-                    // loadAllDvds();
-                    // $('#editDvd').hide();
-                    // $('#showAllDvds').show();
+                    $('#errors-edit-dvds-form').empty();
+                    clearEditDvdForm();
+                    loadAllDvds();
+                    $('#editDvd').hide();
+                    $('#showAllDvds').show();
                 },
                 error: function () {
                     $('#errors-edit-dvds-form')
@@ -379,11 +379,11 @@ $(document).ready(function () {
                 }
             })
 
-            $('#errors-edit-dvds-form').empty();
-            clearEditDvdForm();
-            loadAllDvds();
-            $('#editDvd').hide();
-            $('#showAllDvds').show();
+//             $('#errors-edit-dvds-form').empty();
+//             clearEditDvdForm();
+//             loadAllDvds();
+//             $('#editDvd').hide();
+//             $('#showAllDvds').show();
         }
 
     });
