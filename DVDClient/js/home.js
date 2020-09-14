@@ -231,10 +231,8 @@ function editDvd(id) {
 }
 
 function deleteDvd(id) {
-    alert('This is the id DELETE of that dvd ' + id);
     $('#deleteModal').modal('show');
     $('#deleteModal').find('#delete-dvd-id').val(id);
-    alert('id has been set?');
     //bring up the modal
     //put the hidden id in the modal
     //////then the okay button in the modal will run the delete.
@@ -381,9 +379,13 @@ $(document).ready(function () {
 
             $('#errors-edit-dvds-form').empty();
             clearEditDvdForm();
-            loadAllDvds();
-            $('#editDvd').hide();
-            $('#showAllDvds').show();
+            var millisecondsToWait = 100;
+            setTimeout(function () {
+                loadAllDvds();
+                $('#editDvd').hide();
+                $('#showAllDvds').show();
+            }, millisecondsToWait);
+
         }
 
     });
@@ -415,9 +417,15 @@ $(document).ready(function () {
             //     return false;
             // }
         });
-        $('#deleteModal').on('hide.bs.modal', function (e) {
+        var millisecondsToWait = 200;
+        setTimeout(function () {
+            $('#deleteModal').modal('hide');
             loadAllDvds();
-        });
+
+        }, millisecondsToWait);
+        // $('#deleteModal').on('hide.bs.modal', function (e) {
+        //     loadAllDvds();
+        // });
         // loadAllDvds();
     })
 
