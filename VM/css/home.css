@@ -1,0 +1,99 @@
+body {
+    margin-top: 30px;
+    background-color: ghostwhite;
+}
+
+body.darkMode {
+    background-color: black;
+}
+
+body.darkMode #darkModeToggleIcon {
+    color: whitesmoke;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'VT323', monospace;
+}
+
+body.darkMode h1 {
+    color: lightgrey;
+}
+
+body.darkMode h2 {
+    color: lightgrey;
+}
+
+body.darkMode hr {
+    border-color: darkgray;
+}
+
+.formDivider {
+    width: 75%;
+}
+
+body.darkMode p {
+    color: ghostwhite;
+}
+
+#itemsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.itemToPurchase {
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+
+body.darkMode .itemToPurchase {
+    background-color: dimgray;
+}
+
+
+.itemId {
+    text-align: left
+}
+
+.itemName, .itemPrice {
+    text-align: center;
+}
+
+.itemQuantity {
+    text-align: center;
+    margin-top: auto;
+}
+
+
+.formContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+body.darkMode label {
+    color: lightgrey;
+}
+
+#messagesDisplay {
+    height: 3em;
+}
+
+input {
+    text-align: center;
+}
+
+body.darkMode input {
+    background-color: lightgrey;
+}
+
+body.darkMode input:disabled {
+    color: black;
+}
+
